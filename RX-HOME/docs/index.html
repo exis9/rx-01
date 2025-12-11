@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドキュメント - RX-01 Player</title>
+    <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="logo">RX-01 Player</a>
+            <nav class="nav">
+                <a href="../index.html">ホーム</a>
+                <a href="../install/index.html">インストール方法</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="docs-hero">
+        <div class="container">
+            <h1>ドキュメント</h1>
+            <p>RX-01 Playerの仕様と機能を詳しく解説します</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="docs-main">
+        <div class="container">
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <h3>目次</h3>
+                    <ul>
+                        <li><a href="#overview">概要</a></li>
+                        <li><a href="#versions">バージョン比較</a></li>
+                        <li><a href="#formats">対応ファイル形式</a></li>
+                        <li><a href="#features">主な機能</a></li>
+                        <li><a href="#shortcuts">ショートカット</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <div class="content">
+                <!-- Overview -->
+                <section id="overview" class="doc-section">
+                    <h2>概要</h2>
+                    <p>RX-01 Playerは、語学学習と高度な動画分析に最適化された次世代動画プレイヤーです。わずか10MBの軽量設計ながら、強力な機能を備えています。</p>
+                    
+                    <div class="info-box">
+                        <h4>主な特徴</h4>
+                        <ul>
+                            <li>最大3つまでの字幕を同時表示</li>
+                            <li>字幕から辞書・発音サイトへ瞬間検索</li>
+                            <li>バレットタイムリープ機能で超スロー再生中の巻き戻しも快適</li>
+                            <li>ホイール操作でマウスの位置を最大3倍ズームイン可能</li>
+                            <li>Picture-in-Picture対応</li>
+                            <li>10MBの軽量設計で爆速起動</li>
+                            <li>豊富なショートカットキー（右クリックでキーバインドの変更可能）</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Versions -->
+                <section id="versions" class="doc-section">
+                    <h2>バージョン比較</h2>
+                    <p>RX-01 Playerは、利用シーンに応じて4つのバージョンを提供しています。</p>
+
+                    <div class="version-grid">
+                        <div class="version-card">
+                            <div class="version-header windows">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+                                </svg>
+                                <h3>Windows版</h3>
+                                <div class="version-badge">推奨</div>
+                            </div>
+                            <div class="version-body">
+                                <p class="version-desc">デスクトップアプリケーションとして動作するネイティブ版です。</p>
+                                <h4>特徴</h4>
+                                <ul>
+                                    <li><strong>OSネイティブ動作</strong>で最高のパフォーマンス</li>
+                                    <li>Windows 10/11に対応</li>
+                                    <li>わずか10MBのインストールサイズ</li>
+                                    <li>全機能を完全サポート</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="version-card">
+                            <div class="version-header mac">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                                </svg>
+                                <h3>Mac版</h3>
+                                <div class="version-badge">推奨</div>
+                            </div>
+                            <div class="version-body">
+                                <p class="version-desc">macOS向けのネイティブアプリケーション版です。</p>
+                                <h4>特徴</h4>
+                                <ul>
+                                    <li><strong>macOS最適化</strong>で快適動作</li>
+                                    <li>macOS 10.15 Catalina以降に対応</li>
+                                    <li>Apple Siliconネイティブサポート</li>
+                                    <li>約10MBの超軽量設計</li>
+                                    <li>全機能を完全サポート</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="version-card">
+                            <div class="version-header visios">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                </svg>
+                                <h3>VisiOS版</h3>
+                                <div class="version-badge web">Web</div>
+                            </div>
+                            <div class="version-body">
+                                <p class="version-desc">Chrome拡張機能「VisiOS」上で動作するブラウザ版です。</p>
+                                <h4>特徴</h4>
+                                <ul>
+                                    <li><strong>１秒インストール</strong>でブラウザから利用</li>
+                                    <li>タブやブックマークを視覚的に管理</li>
+                                    <li>他のWebアプリと連携して動作</li>
+                                    <li>Chrome/Edge/Braveなど対応</li>
+                                    <li>クロスプラットフォーム対応</li>
+                                    <li>VisiOS拡張機能が必要</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="version-card">
+                            <div class="version-header nyan8">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                                <h3>Nyan-8版</h3>
+                                <div class="version-badge social">Social</div>
+                            </div>
+                            <div class="version-body">
+                                <p class="version-desc">コミュニケーション機能を統合したブラウザ版です。</p>
+                                <h4>特徴</h4>
+                                <ul>
+                                    <li><strong>完全インストール不要</strong>でブラウザから即利用</li>
+                                    <li>他のユーザーとテキストメッセージ</li>
+                                    <li>ビデオチャット機能搭載</li>
+                                    <li>ボイスコール対応</li>
+                                    <li>動画を見ながら友達と会話</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comparison-table">
+                        <h3>機能比較表</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>機能</th>
+                                    <th>Windows/Mac</th>
+                                    <th>VisiOS</th>
+                                    <th>Nyan-8</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>インストール</td>
+                                    <td>必要</td>
+                                    <td>拡張機能</td>
+                                    <td>不要</td>
+                                </tr>
+                                <tr>
+                                    <td>起動速度</td>
+                                    <td>爆速</td>
+                                    <td>光速</td>
+                                    <td>神速</td>
+                                </tr>
+                                <tr>
+                                    <td>ブラウザ上で動作</td>
+                                    <td>✗</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>トリプル字幕機能</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>辞書サイト連携</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>バレットタイムリープ</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>ホイールで好きな箇所を3xズームイン</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>ビデオ/音楽URL再生</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>YouTube URL再生</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>ローカルビデオ/音楽ファイルの再生</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr>
+                                    <td>拡張子を関連付けてローカル再生</td>
+                                    <td>✓</td>
+                                    <td>✗</td>
+                                    <td>✗</td>
+                                </tr>
+                                <tr>
+                                    <td>ネイティブの友達</td>
+                                    <td>✗</td>
+                                    <td>✗</td>
+                                    <td>✓</td>
+                                </tr>
+                                <tr class="price-row">
+                                    <td>価格</td>
+                                    <td><span class="price-badge">無料</span></td>
+                                    <td><span class="price-badge">無料</span></td>
+                                    <td><span class="price-badge">無料</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <!-- Formats -->
+                <section id="formats" class="doc-section">
+                    <h2>対応ファイル形式</h2>
+                    <p>RX-01 Playerは、幅広いメディアファイル形式に対応しています。</p>
+
+                    <div class="format-grid">
+                        <div class="format-category">
+                            <h3>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="23 7 16 12 23 17 23 7"/>
+                                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                                </svg>
+                                動画形式
+                            </h3>
+                            <div class="format-list">
+                                <div class="format-item">
+                                    <span class="format-ext">.mp4</span>
+                                    <span class="format-name">MPEG-4 Video</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">.webm</span>
+                                    <span class="format-name">WebM Video</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">.mkv</span>
+                                    <span class="format-name">Matroska Video</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">.mov</span>
+                                    <span class="format-name">QuickTime Movie</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">.m4v</span>
+                                    <span class="format-name">iTunes Video</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="format-category">
+                            <h3>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 18V5l12-2v13"/>
+                                    <circle cx="6" cy="18" r="3"/>
+                                    <circle cx="18" cy="16" r="3"/>
+                                </svg>
+                                音楽形式
+                            </h3>
+                            <div class="format-list">
+                                <div class="format-item">
+                                    <span class="format-ext">.mp3</span>
+                                    <span class="format-name">MP3 Audio</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">.wav</span>
+                                    <span class="format-name">WAV Audio</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">.ogg</span>
+                                    <span class="format-name">Ogg Vorbis</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">.flac</span>
+                                    <span class="format-name">FLAC Audio</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">.aac</span>
+                                    <span class="format-name">AAC Audio</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">.m4a</span>
+                                    <span class="format-name">M4A Audio</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="format-category">
+                            <h3>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 16v-4"/>
+                                    <path d="M12 8h.01"/>
+                                </svg>
+                                字幕形式
+                            </h3>
+                            <div class="format-list">
+                                <div class="format-item">
+                                    <span class="format-ext">.srt</span>
+                                    <span class="format-name">辞書/翻訳/検索/AIなどの機能が使える</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">YouTube CC　</span>
+                                    <span class="format-name">辞書機能は使用不可<br>（ダウンロードしたら可能）</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="format-category">
+                            <h3>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <line x1="2" y1="12" x2="22" y2="12"/>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                </svg>
+                                オンライン動画
+                            </h3>
+                            <div class="format-list">
+                                <div class="format-item">
+                                    <span class="format-ext">YouTube</span>
+                                    <span class="format-name">YouTubeのURL直接再生</span>
+                                </div>
+                                <div class="format-item">
+                                    <span class="format-ext">URL</span>
+                                    <span class="format-name">各種動画URL対応</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-box tip">
+                        <h4>💡 動画ファイルの読み込み方法</h4>
+                        <ul>
+                            <li>ドラッグ&ドロップでファイルを追加</li>
+                            <li>ファイル選択ダイアログから選択</li>
+                            <li>URLを直接入力して再生 (動画再生中のCtrl+Vや右クリックメニューからの貼り付けにも対応)</li>
+                            <li>.srtファイルをドロップして字幕を追加（最大3つまで）</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Features -->
+                <section id="features" class="doc-section">
+                    <h2>主な機能</h2>
+
+                    <div class="feature-docs">
+                        <div class="feature-doc-card">
+                            <h3>トリプル字幕表示</h3>
+                            <p>最大3つまでの字幕を同時に表示できます。.srtファイルをドロップするだけで簡単に読み込めます。</p>
+                            <div class="code-block">
+                                <code>使用例：英語学習で英語字幕、日本語字幕、発音記号を同時表示</code>
+                            </div>
+                        </div>
+
+                        <div class="feature-doc-card">
+                            <h3>辞書連携機能</h3>
+                            <p>字幕内の単語や文章を、登録した辞書サイトや発音サイト、文法サイトから瞬時に検索できます。</p>
+                            <ul>
+                                <li>100種類以上のサイトをプリセット</li>
+                                <li>カスタムサイトの追加が可能</li>
+                                <li>単語選択して右クリックで検索</li>
+                                <li>文全体や一部分だけを選択可能</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-doc-card">
+                            <h3>バレットタイムリープ</h3>
+                            <p>聞き取れなかった部分をスロー再生で繰り返し確認できる機能です。</p>
+                            <ul>
+                                <li>0.1x～4.0xで速度調整（YouTube動画は0.25～2.0x）</li>
+                                <li>再生速度に応じた0.3～3秒の巻き戻しに対応してるので一瞬の動作の確認が簡単</li>
+                                <li>語学学習に最適</li>
+                                <li>ダンスやマジックの動作確認にも有効</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-doc-card">
+                            <h3>YouTubeのCCをダウンロード</h3>
+                            <p>YouTube再生中、一時停止したら右上からいつでも字幕をダウンロード可能</p>
+                            <ul>
+                                <li>再生中、字幕が必要になったら右上の.srtダウンロードボタンをクリック</li>
+                                <li>欲しい言語の.srtをダウンロードして、プレイヤーにドロップするだけで字幕表示</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-doc-card">
+                            <h3>Picture-in-Picture</h3>
+                            <p>動画を小窓で表示し、他の作業をしながら視聴できます。</p>
+                            <ul>
+                                <li>デスクトップ版・ブラウザ版で対応</li>
+                                <li>サイズ・位置を自由に調整</li>
+                            </ul>
+                        </div>
+
+                        <div class="feature-doc-card">
+                            <h3>シークバープレビュー</h3>
+                            <p>シークバーにマウスをホバーすると、その位置の映像をプレビュー表示します。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Shortcuts -->
+                <section id="shortcuts" class="doc-section">
+                    <h2>ショートカットキー</h2>
+                    <p>豊富なショートカットキーで快適に操作できます。ショートカットキーのキーバインディングは画面を右クリックして「設定」を選ぶといつでも変更可能です</p>
+
+                    <div class="shortcut-grid">
+                        <div class="shortcut-category">
+                            <h3>再生制御</h3>
+                            <table class="shortcut-table">
+                                <tr>
+                                    <td><kbd>Space または S</kbd></td>
+                                    <td>再生/一時停止</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>← または A</kbd></td>
+                                    <td>3秒戻る（再生速度に応じて可変）</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>→ または D</kbd></td>
+                                    <td>3秒進む（再生速度に応じて可変）</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="shortcut-category">
+                            <h3>音量・速度</h3>
+                            <table class="shortcut-table">
+                                <tr>
+                                    <td><kbd>↑</kbd> / <kbd>↓</kbd></td>
+                                    <td>音量を上げる/下げる</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>M</kbd></td>
+                                    <td>ミュート切替</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>[</kbd> / <kbd>]</kbd></td>
+                                    <td>再生速度を下げる/上げる</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="shortcut-category">
+                            <h3>表示</h3>
+                            <table class="shortcut-table">
+                                <tr>
+                                    <td><kbd>F</kbd></td>
+                                    <td>フルスクリーン切替</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>C</kbd></td>
+                                    <td>.srtの字幕表示切替</td>
+                                </tr>
+                                <tr>
+                                    <td><kbd>P</kbd></td>
+                                    <td>Picture-in-Picture</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="shortcut-category">
+                            <h3>その他</h3>
+                            <table class="shortcut-table">
+                                <tr>
+                                    <td><kbd>Esc</kbd></td>
+                                    <td>フルスクリーン解除</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">RX-01 Player</div>
+                    <p>次世代動画プレイヤー</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>プロダクト</h4>
+                        <a href="../index.html#features">特徴</a>
+                        <a href="../index.html#download">ダウンロード</a>
+                        <a href="index.html">ドキュメント</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>サポート</h4>
+                        <a href="index.html">インストール方法</a>
+                        <a href="https://beta-japan.com/exis/">お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RX-01 Player. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
