@@ -6,6 +6,7 @@
     <title>ドキュメント - RX-01 Player</title>
     <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="stylesheet" href="docs.css">
+    <script src="../lang.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -14,8 +15,12 @@
             <a href="../" class="logo">RX-01 Player</a>
             <button class="menu-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
             <nav class="nav">
-                <a href="../">ホーム</a>
-                <a href="../install/">インストール方法</a>
+                <a href="../" data-i18n="docs.nav.home">ホーム</a>
+                <a href="../install/" data-i18n="docs.nav.install">インストール方法</a>
+                <select id="language-selector" class="lang-selector">
+                    <option value="ja">日本語</option>
+                    <option value="en">English</option>
+                </select>
             </nav>
         </div>
     </header>
@@ -23,8 +28,8 @@
     <!-- Hero -->
     <section class="docs-hero">
         <div class="container">
-            <h1>ドキュメント</h1>
-            <p>RX-01 Playerの仕様と機能を詳しく解説します</p>
+            <h1 data-i18n="docs.title">ドキュメント</h1>
+            <p data-i18n="docs.subtitle">RX-01 Playerの仕様と機能を詳しく解説します</p>
         </div>
     </section>
 
@@ -33,13 +38,13 @@
         <div class="container">
             <aside class="sidebar">
                 <nav class="sidebar-nav">
-                    <h3>目次</h3>
+                    <h3 data-i18n="docs.toc.title">目次</h3>
                     <ul>
-                        <li><a href="#overview">概要</a></li>
-                        <li><a href="#versions">バージョン比較</a></li>
-                        <li><a href="#formats">対応ファイル形式</a></li>
-                        <li><a href="#features">主な機能</a></li>
-                        <li><a href="#shortcuts">ショートカット</a></li>
+                        <li><a href="#overview" data-i18n="docs.toc.overview">概要</a></li>
+                        <li><a href="#versions" data-i18n="docs.toc.versions">バージョン比較</a></li>
+                        <li><a href="#formats" data-i18n="docs.toc.formats">対応ファイル形式</a></li>
+                        <li><a href="#features" data-i18n="docs.toc.features">主な機能</a></li>
+                        <li><a href="#shortcuts" data-i18n="docs.toc.shortcuts">ショートカット</a></li>
                     </ul>
                 </nav>
             </aside>

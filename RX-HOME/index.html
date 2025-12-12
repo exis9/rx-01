@@ -6,17 +6,22 @@
     <title>RX-01 Player - 次世代動画プレイヤー</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="index.css">
+    <script src="lang.js"></script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
-            <div class="logo">RX-01 Player</div>
+             <a href="./" class="logo">RX-01 Player</a>
             <button class="menu-toggle" aria-label="メニュー"><span></span><span></span><span></span></button>
             <nav class="nav">
-                <a href="#features">特徴</a>
-                <a href="docs/">ドキュメント</a>
-                <a href="#download">ダウンロード</a>
+                <a href="#features" data-i18n="nav.features">特徴</a>
+                <a href="docs/" data-i18n="nav.docs">ドキュメント</a>
+                <a href="#download" data-i18n="nav.download">ダウンロード</a>
+                <select id="language-selector" class="lang-selector">
+                    <option value="ja">日本語</option>
+                    <option value="en">English</option>
+                </select>
             </nav>
         </div>
     </header>
@@ -27,17 +32,17 @@
             <div class="hero-content">
                 <h1 class="hero-title">
                     <span class="glitch" data-text="RX-01">RX-01</span>
-                    <br>動画プレイヤーで世界最速の言語学習
+                    <br><span data-i18n="hero.title.main">動画プレイヤーで世界最速の言語学習</span>
                 </h1>
-                <p class="hero-subtitle">単語の意味、文法、そして究極の視聴体験</p>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">単語の意味、文法、そして究極の視聴体験</p>
                 <div class="hero-features">
-                    <span class="badge">わずか10MB</span>
-                    <span class="badge">爆速起動</span>
-                    <span class="badge">完全無料</span>
+                    <span class="badge" data-i18n="hero.badge.size">わずか10MB</span>
+                    <span class="badge" data-i18n="hero.badge.speed">爆速起動</span>
+                    <span class="badge" data-i18n="hero.badge.free">完全無料</span>
                 </div>
                 <div class="hero-cta">
-                    <a href="#download" class="btn btn-primary">今すぐダウンロード</a>
-                    <a href="#features" class="btn btn-secondary">詳しく見る</a>
+                    <a href="#download" class="btn btn-primary" data-i18n="hero.cta.download">今すぐダウンロード</a>
+                    <a href="#features" class="btn btn-secondary" data-i18n="hero.cta.learn">詳しく見る</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -46,9 +51,9 @@
                         <div class="mockup-controls">
                             <div class="control-bar"></div>
                             <div class="subtitle-demo">
-                                <div class="subtitle-line">字幕1: Hello, World!</div>
-                                <div class="subtitle-line">字幕2: こんにちは、世界！</div>
-                                <div class="subtitle-line">字幕3: Hola, Mundo!</div>
+                                <div class="subtitle-line" data-i18n="subtitle.line1">字幕1: Hello, World!</div>
+                                <div class="subtitle-line" data-i18n="subtitle.line2">字幕2: こんにちは、世界！</div>
+                                <div class="subtitle-line" data-i18n="subtitle.line3">字幕3: Hola, Mundo!</div>
                             </div>
                         </div>
                     </div>
@@ -60,7 +65,7 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">RX-01で外国語の学習が加速し続けてもう止まらない</h2>
+            <h2 class="section-title" data-i18n="features.title">RX-01で外国語の学習が加速し続けてもう止まらない</h2>
             
             <div class="feature-grid">
                 <!-- Feature 1: 多重字幕 -->
@@ -72,8 +77,8 @@
                             <line x1="6" y1="16" x2="14" y2="16"/>
                         </svg>
                     </div>
-                    <h3>トリプル字幕表示</h3>
-                    <p>最大3つまでの字幕を同時表示。.srtファイルをドロップするだけで簡単に読み込めます。多言語学習に最適。</p>
+                    <h3 data-i18n="feature1.title">トリプル字幕表示</h3>
+                    <p data-i18n="feature1.desc">最大3つまでの字幕を同時表示。.srtファイルをドロップするだけで簡単に読み込めます。多言語学習に最適。</p>
                 </div>
 
                 <!-- Feature 2: 辞書連携 -->
@@ -86,8 +91,8 @@
                             <path d="M8 11h6"/>
                         </svg>
                     </div>
-                    <h3>瞬間辞書検索</h3>
-                    <p>字幕内の単語を辞書・発音・文法サイトから一瞬で検索。100種類以上のサイトをプリセット。カスタマイズも自由自在。</p>
+                    <h3 data-i18n="feature2.title">瞬間辞書検索</h3>
+                    <p data-i18n="feature2.desc">字幕内の単語を辞書・発音・文法サイトから一瞬で検索。100種類以上のサイトをプリセット。カスタマイズも自由自在。</p>
                 </div>
 
                 <!-- Feature 3: バレットタイムリープ -->
@@ -99,8 +104,8 @@
                             <path d="M16.5 7.5l3-3"/>
                         </svg>
                     </div>
-                    <h3>バレットタイムリープ</h3>
-                    <p>聞き取れなかった瞬間を最大0.1倍速でスロー再生しながら0.3秒ずつ戻って何度も確認。語学学習はもちろん、マジックやダンスの一瞬の動きも逃さない。くわしく見たい場所のズームも対応。</p>
+                    <h3 data-i18n="feature3.title">バレットタイムリープ</h3>
+                    <p data-i18n="feature3.desc">聞き取れなかった瞬間を最大0.1倍速でスロー再生しながら0.3秒ずつ戻って何度も確認。語学学習はもちろん、マジックやダンスの一瞬の動きも逃さない。くわしく見たい場所のズームも対応。</p>
                 </div>
 
                 <!-- Feature 4: 多様な形式対応 -->
@@ -111,8 +116,8 @@
                             <polyline points="13 2 13 9 20 9"/>
                         </svg>
                     </div>
-                    <h3>あらゆる形式に対応</h3>
-                    <p>mp4, webm, mkv, mov, mp3, wav, flacなど多様な形式をサポート。ローカルファイルもYouTube URLも再生可能。</p>
+                    <h3 data-i18n="feature4.title">あらゆる形式に対応</h3>
+                    <p data-i18n="feature4.desc">mp4, webm, mkv, mov, mp3, wav, flacなど多様な形式をサポート。ローカルファイルもYouTube URLも再生可能。</p>
                 </div>
 
                 <!-- Feature 5: 軽量高速 -->
@@ -122,8 +127,8 @@
                             <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                         </svg>
                     </div>
-                    <h3>わずか10MBで爆速起動</h3>
-                    <p>OSネイティブスピードで瞬時に起動。シークバーホバーでプレビュー表示、豊富なショートカットキーで快適操作。</p>
+                    <h3 data-i18n="feature5.title">わずか10MBで爆速起動</h3>
+                    <p data-i18n="feature5.desc">OSネイティブスピードで瞬時に起動。シークバーホバーでプレビュー表示、豊富なショートカットキーで快適操作。</p>
                 </div>
 
                 <!-- Feature 6: Picture-in-Picture -->
@@ -134,8 +139,8 @@
                             <rect x="13" y="11" width="8" height="8" rx="1"/>
                         </svg>
                     </div>
-                    <h3>ながら視聴に最適</h3>
-                    <p>Picture-in-Picture対応で、動画を見ながら他の作業も可能。マルチタスクを快適にサポート。</p>
+                    <h3 data-i18n="feature6.title">ながら視聴に最適</h3>
+                    <p data-i18n="feature6.desc">Picture-in-Picture対応で、動画を見ながら他の作業も可能。マルチタスクを快適にサポート。</p>
                 </div>
             </div>
         </div>
@@ -144,7 +149,7 @@
     <!-- Platforms Section -->
     <section class="platforms">
         <div class="container">
-            <h2 class="section-title">あらゆる環境で</h2>
+            <h2 class="section-title" data-i18n="platforms.title">あらゆる環境で</h2>
             <div class="platform-grid">
                 <div class="platform-card cGoDL">
                     <div class="platform-icon">
@@ -152,7 +157,7 @@
                             <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
                         </svg>
                     </div>
-                    <h3>Windows版</h3>
+                    <h3 data-i18n="platform.windows">Windows版</h3>
                 </div>
                 <div class="platform-card cGoDL">
                     <div class="platform-icon">
@@ -160,7 +165,7 @@
                             <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
                         </svg>
                     </div>
-                    <h3>Mac版</h3>
+                    <h3 data-i18n="platform.mac">Mac版</h3>
                 </div>
                 <div class="platform-card" onclick="window.open('https://beta-japan.com/', '_blank')">
                     <div class="platform-icon">
@@ -171,8 +176,8 @@
                         </svg-->
                         <img src="img/visios.png" alt="Nyan-8 Logo" style="width:48px; height:48px;">
                     </div>
-                    <h3>VisiOS版</h3>
-                    <p class="platform-desc">Chrome拡張機能で動作</p>
+                    <h3 data-i18n="platform.visios">VisiOS版</h3>
+                    <p class="platform-desc" data-i18n="platform.visios.desc">Chrome拡張機能で動作</p>
                 </div>
                 <div class="platform-card" onclick="window.open('https://nyan-8.com/', '_blank')">
                     <div class="platform-icon">
@@ -184,27 +189,27 @@
                         </svg-->
                         <img src="img/n8.png" alt="Nyan-8 Logo" style="width:48px; height:48px;">
                     </div>
-                    <h3>Nyan-8版</h3>
-                    <p class="platform-desc">学習言語の外国人と一緒に動画を見れる。インストール不要</p>
+                    <h3 data-i18n="platform.nyan8">Nyan-8版</h3>
+                    <p class="platform-desc" data-i18n="platform.nyan8.desc">学習言語の外国人と一緒に動画を見れる。インストール不要</p>
                 </div>
             </div>
-            <p class="platforms-note">全バージョン、全機能が完全無料！広告も無し！</p>
+            <p class="platforms-note" data-i18n="platforms.note">全バージョン、全機能が完全無料！広告も無し！</p>
         </div>
     </section>
 
     <!-- Download Section -->
     <section id="download" class="download">
         <div class="container">
-            <h2 class="section-title">今すぐ始めよう</h2>
-            <p class="download-subtitle">RX-01 Playerで、新しい視聴体験を。初回起動時にWindowsとMacではセキュリティ警告が出ることがあります。<a class="cLink" href="/install/">インストール方法</a>も参照してください。</p>
+            <h2 class="section-title" data-i18n="download.title">今すぐ始めよう</h2>
+            <p class="download-subtitle"><span data-i18n="download.subtitle">RX-01 Playerで、新しい視聴体験を。初回起動時にWindowsとMacではセキュリティ警告が出ることがあります。</span><a class="cLink" href="/install/" data-i18n="download.install.link">インストール方法</a><span data-i18n="download.subtitle.suffix">も参照してください。</span></p>
             <div class="download-buttons">
                 <a href="https://github.com/exis9/rx-01/releases/download/v0.1.0/RX-01.exe" class="download-btn">
                     <svg viewBox="0 0 24 24" fill="currentColor">
                         <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
                     </svg>
                     <span>
-                        <strong>Windows版</strong>
-                        <small>v0.1.0 - 10MB - Windows 10/11</small>
+                        <strong data-i18n="download.windows">Windows版</strong>
+                        <small data-i18n="download.windows.info">v0.1.0 - 10MB - Windows 10/11</small>
                     </span>
                 </a>
                 <a href="https://github.com/exis9/rx-01/releases/download/v0.1.0/RX-01.Player_0.1.0_x64.dmg" class="download-btn">
@@ -212,15 +217,15 @@
                         <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
                     </svg>
                     <span>
-                        <strong>Mac版</strong>
-                        <small>v0.1.0 - 10MB - macOS 10.15+</small>
+                        <strong data-i18n="download.mac">Mac版</strong>
+                        <small data-i18n="download.mac.info">v0.1.0 - 10MB - macOS 10.15+</small>
                     </span>
                 </a>
             </div>
             <div class="download-links">
-                <a href="https://beta-japan.com/" target="_blank">VisiOS版を入手</a>
+                <a href="https://beta-japan.com/" target="_blank" data-i18n="download.visios">VisiOS版を入手</a>
                 <span>·</span>
-                <a href="https://nyan-8.com/" target="_blank">Nyan-8版を使う</a>
+                <a href="https://nyan-8.com/" target="_blank" data-i18n="download.nyan8">Nyan-8版を使う</a>
             </div>
         </div>
     </section>
@@ -229,6 +234,14 @@
     <footer class="footer"></footer>
     <script src="global.js"></script>
     <script>
+        // Language selector
+        const languageSelector = document.getElementById('language-selector');
+        if (languageSelector) {
+            languageSelector.addEventListener('change', (e) => {
+                LanguageManager.setLanguage(e.target.value);
+            });
+        }
+
         // Smooth scroll for platform cards
         document.querySelectorAll('.cGoDL').forEach(card => {
             card.style.cursor = 'pointer';
