@@ -616,6 +616,7 @@ body {
 }
 .shortcut-table tr td:first-child {
   padding-right: 15px;
+  white-space: nowrap;
 }
 .shortcut-table tr td:last-child {
   color: #a0a0b0;
