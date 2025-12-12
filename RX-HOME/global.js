@@ -52,3 +52,5 @@ function smoothScrollTo(target, duration = 1500) {
     }
     requestAnimationFrame(animation);
 }
+
+dispFooter();
