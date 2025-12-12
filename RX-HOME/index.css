@@ -69,6 +69,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  z-index: 1001;
 }
 .header .nav {
   display: flex;
@@ -83,7 +84,148 @@ body {
 .header .nav a:hover {
   color: #00ff88;
 }
+.header .menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+.header .menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #00ff88;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.header .menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+.header .menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+.header .menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
 
+.footer {
+  padding: 60px 0 30px;
+  background: #05050a;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 100px;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+.footer-brand .logo {
+  font-size: 24px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #00ff88, #0088ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+.footer-brand p {
+  color: #a0a0b0;
+}
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.footer-column a {
+  display: block;
+  color: #a0a0b0;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+.footer-column a:hover {
+  color: #00ff88;
+}
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #a0a0b0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .header .menu-toggle {
+    display: flex;
+  }
+  .header .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(10, 10, 15, 0.98);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    flex-direction: column;
+    gap: 0;
+    padding: 80px 30px 30px;
+    transition: right 0.3s ease;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .header .nav.active {
+    right: 0;
+  }
+  .header .nav a {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+  }
+  .hero {
+    padding: 120px 0 60px;
+  }
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+  .hero-title .glitch {
+    font-size: 48px;
+  }
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  .hero-cta {
+    flex-direction: column;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .hero {
   padding: 150px 0 100px;
   background: radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(0, 136, 255, 0.1) 0%, transparent 50%);
@@ -488,46 +630,5 @@ body {
   }
   98% {
     transform: translate(2px, 2px);
-  }
-}
-@media (max-width: 768px) {
-  .hero {
-    padding: 120px 0 60px;
-  }
-  .hero .container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .hero-title {
-    font-size: 36px;
-  }
-  .hero-title .glitch {
-    font-size: 48px;
-  }
-  .hero-subtitle {
-    font-size: 18px;
-  }
-  .hero-cta {
-    flex-direction: column;
-  }
-  .header .nav {
-    gap: 20px;
-  }
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-  .section-title {
-    font-size: 32px;
-  }
-  .download-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-  .platform-grid {
-    grid-template-columns: 1fr;
   }
 }/*# sourceMappingURL=index.css.map */

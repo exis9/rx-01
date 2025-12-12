@@ -53,4 +53,21 @@ function smoothScrollTo(target, duration = 1500) {
     requestAnimationFrame(animation);
 }
 
+// Mobile menu toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+});
+
+// Close menu when clicking nav links
+document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        nav.classList.remove('active');
+    });
+});
+
 dispFooter();
