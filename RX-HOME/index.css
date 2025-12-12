@@ -5,32 +5,6 @@
   box-sizing: border-box;
 }
 
-.cLink {
-  color: #00ff88;
-  text-decoration: none;
-  font-weight: 600;
-  border-bottom: 2px solid rgba(0, 255, 136, 0.3);
-  transition: all 0.3s;
-  padding: 0 4px 2px 4px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-}
-.cLink::after {
-  content: "🔗";
-  font-size: 0.85em;
-  opacity: 0.7;
-  transition: opacity 0.3s;
-}
-.cLink:hover {
-  opacity: 0.84;
-  color: #00ff88;
-  border-bottom-color: #00ff88;
-}
-.cLink:hover::after {
-  opacity: 1;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
   background-color: #0a0a0f;
@@ -226,6 +200,32 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.cLink {
+  color: #00ff88;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(0, 255, 136, 0.3);
+  transition: all 0.3s;
+  padding: 0 4px 2px 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.cLink::after {
+  content: "🔗";
+  font-size: 0.85em;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.cLink:hover {
+  opacity: 0.84;
+  color: #00ff88;
+  border-bottom-color: #00ff88;
+}
+.cLink:hover::after {
+  opacity: 1;
+}
+
 .hero {
   padding: 150px 0 100px;
   background: radial-gradient(circle at 20% 50%, rgba(0, 255, 136, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(0, 136, 255, 0.1) 0%, transparent 50%);
@@ -630,5 +630,95 @@ body {
   }
   98% {
     transform: translate(2px, 2px);
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 50px;
+  }
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .hero-content {
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+  }
+  .hero-title .glitch {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .hero-features {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+  }
+  .hero-features .badge {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-cta .btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+  .hero-image {
+    order: -1;
+  }
+  .player-mockup {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .mockup-screen {
+    border-radius: 12px;
+    padding: 15px;
+  }
+  .mockup-controls .subtitle-demo {
+    gap: 6px;
+  }
+  .mockup-controls .subtitle-demo .subtitle-line {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  .platform-grid {
+    grid-template-columns: 1fr;
+  }
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .download-btn {
+    width: 100%;
+    max-width: 350px;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }/*# sourceMappingURL=index.css.map */

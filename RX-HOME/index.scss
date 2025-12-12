@@ -467,3 +467,118 @@
         transform: translate(2px, 2px);
     }
 }
+
+// Responsive
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 50px;
+
+        .container {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        &-content {
+            text-align: center;
+        }
+
+        &-title {
+            font-size: 28px;
+            line-height: 1.3;
+            margin-bottom: 15px;
+
+            .glitch {
+                font-size: 40px;
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+
+        &-subtitle {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        &-features {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 25px;
+
+            .badge {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+
+        &-cta {
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+
+            .btn {
+                width: 100%;
+                max-width: 280px;
+                padding: 12px 24px;
+                font-size: 15px;
+            }
+        }
+
+        &-image {
+            order: -1;
+        }
+    }
+
+    .player-mockup {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .mockup-screen {
+        border-radius: 12px;
+        padding: 15px;
+    }
+
+    .mockup-controls {
+        .subtitle-demo {
+            gap: 6px;
+
+            .subtitle-line {
+                font-size: 10px;
+                padding: 4px 8px;
+            }
+        }
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-btn {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
