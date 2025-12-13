@@ -504,4 +504,101 @@
         gap: 15px;
         font-size: 14px;
     }
+
+    // コンテナのパディング調整
+    .container {
+        padding: 0 15px;
+    }
+
+    .docs-main {
+        padding: 40px 0;
+    }
+
+    // テーブルのスクロール対応
+    .comparison-table {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        
+        table {
+            min-width: 500px;
+        }
+    }
+
+    .shortcut-table {
+        font-size: 14px;
+
+        kbd {
+            padding: 2px 6px;
+            font-size: 11px;
+        }
+    }
+
+    // info-boxのパディング調整
+    .info-box {
+        padding: 20px 15px;
+        margin: 20px 0;
+
+        h3, h4 {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    // バージョンカード
+    .version-card {
+        .version-header {
+            padding: 20px 15px;
+
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        .version-body {
+            padding: 20px 15px;
+
+            ul {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    // フォーマット表示
+    .format-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+
+        .format-ext {
+            font-size: 14px;
+        }
+
+        .format-name {
+            font-size: 13px;
+        }
+    }
+
+    // feature-doc-card
+    .feature-doc-card {
+        padding: 20px 15px;
+
+        h3 {
+            font-size: 18px;
+        }
+
+        p, li {
+            font-size: 14px;
+        }
+    }
+
+    // コードブロック
+    .code-block {
+        padding: 15px;
+        font-size: 13px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 }
