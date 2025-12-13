@@ -75,6 +75,8 @@
 // Content
 .content {
     max-width: 800px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .doc-section {
@@ -484,11 +486,16 @@
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .docs-hero {
         padding: 100px 0 40px;
 
         h1 {
             font-size: 36px;
+            word-wrap: break-word;
         }
 
         p {
@@ -498,6 +505,7 @@
 
     .doc-section h2 {
         font-size: 28px;
+        word-wrap: break-word;
     }
 
     .header .nav {
@@ -508,6 +516,13 @@
     // コンテナのパディング調整
     .container {
         padding: 0 15px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .content {
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .docs-main {
@@ -516,11 +531,15 @@
 
     // テーブルのスクロール対応
     .comparison-table {
+        width: 100%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+        margin: 0 -15px;
+        padding: 0 15px;
         
         table {
             min-width: 500px;
+            max-width: 100%;
         }
     }
 
@@ -537,23 +556,33 @@
     .info-box {
         padding: 20px 15px;
         margin: 20px 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
 
         h3, h4 {
             font-size: 16px;
+            word-wrap: break-word;
         }
 
         p {
             font-size: 14px;
+            word-wrap: break-word;
         }
     }
 
     // バージョンカード
     .version-card {
+        max-width: 100%;
+        box-sizing: border-box;
+
         .version-header {
             padding: 20px 15px;
 
             h3 {
                 font-size: 18px;
+                word-wrap: break-word;
             }
         }
 
@@ -562,6 +591,10 @@
 
             ul {
                 padding-left: 20px;
+
+                li {
+                    word-wrap: break-word;
+                }
             }
         }
     }
