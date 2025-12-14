@@ -51,6 +51,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   z-index: 1001;
+  text-decoration: none;
 }
 .header .nav {
   display: flex;
