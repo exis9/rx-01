@@ -11,7 +11,6 @@ function dispFooter(){
                         <h4 data-i18n="footer.product">プロダクト</h4>
                         <a href="/#features" data-i18n="footer.features">特徴</a>
                         <a href="/#download" data-i18n="footer.download">ダウンロード</a>
-                        <a href="/docs/" data-i18n="footer.docs">ドキュメント</a>
                     </div>
                     <div class="footer-column">
                         <h4 data-i18n="footer.support">サポート</h4>
