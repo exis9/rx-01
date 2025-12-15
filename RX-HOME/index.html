@@ -452,7 +452,7 @@
             window.addEventListener('resize', resizeCanvas);
 
             const fontSize = 14;
-            const columns = Math.floor(canvas.width / fontSize);
+            const columns = Math.floor(canvas.width / fontSize) + 1;
             const drops = Array(columns).fill(0);
             
             let animationId = null;
